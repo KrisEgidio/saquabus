@@ -1,0 +1,60 @@
+{% extends "template.html" %}
+
+{% block content %}
+  <div class="hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-8">
+				  <div class="card mb-4">
+					<div class="card-body">
+					  <form class="form">
+						<div class="row mb-2">
+							<div class="col-sm-12 col-md-4">
+								<input id="date" type="date" class="form-control" name="date">
+							</div>
+							<div class="col-sm-12 col-md-3 mt-2">
+								<label class="control control--checkbox">
+									<span class="caption">É feriado?</span>
+									<input id="is_holiday" type="checkbox">
+								</label>
+							</div>
+						</div>
+						  <div class="row mb-2">
+							<div class="col-sm-12 col-md-6 mb-3">
+								<select name="origin" id="origin" class="form-control">
+									<option value="BACAXÁ">Bacaxá</option>
+									<option value="VILATUR">Vilatur</option>
+								</select>
+							</div>
+							<div class="col-sm-12 col-md-6 mb-2">
+								<select name="line" id="line" class="form-control">
+									<option value="LINHA 42 ROD. AMARAL PEIXOTO">42 - Amaral Peixoto</option>
+									<option value="LINHA 23 ÁGUA BRANCA">23 - Água Branca</option>
+								</select>
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+								<input type="submit" class="btn btn-primary btn-block" value="Buscar">
+							</div>
+						</div>
+						</form>
+					</div>
+				  </div>
+				</div>
+				<div class="col-12 col-sm-4 mb-4">
+				  <ul class="list-group">
+					  <a href="#" class="list-group-item list-group-item-action active">
+						Cras justo odio
+					  </a>
+					  <li class="list-group-item disabled">Cras justo odio</li>
+					  <li class="list-group-item">Dapibus ac facilisis in</li>
+					  <li class="list-group-item">Morbi leo risus</li>
+					  <li class="list-group-item">Porta ac consectetur ac</li>
+					  <li class="list-group-item">Vestibulum at eros</li>
+				  </ul>
+				</div>
+  			</div>
+		</div>
+	</div>
+{% endblock %}
